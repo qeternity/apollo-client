@@ -957,7 +957,7 @@ export class QueryManager<TStore> {
         query,
         {},
         variables,
-        false,
+        true,
       ).map(result => {
         if (!fetchPolicy || fetchPolicy !== 'no-cache') {
           this.dataStore.markSubscriptionResult(
